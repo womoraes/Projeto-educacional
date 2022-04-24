@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>Tech Me</title>
+</head>
+
+<body>
+    <div class="caixa-superior">
+        <div class="cabecalho">
+            <h2 class="titulo-cabecalho">Tech Me</h2>
+            <a href="#titulo-inferior" class="Link-cabecalho">Sobre nós</a>
+            <a href="#titulo-meio" class="Link-cabecalho" >Como atuamos</a>
+            <a class="Link-cabecalho" onclick="chameOabacate()">Contato</a>
+        </div>
+
+
+        <h1>Tech Me, transformando vidas.</h1>
+
+        
+        <form id="formulario-contato" action="https://formsubmit.co/wirleymoraes70@gmail.com" method="POST">
+            <h3 class="titulo-formulario">Entre em contato</h3>
+            <label>
+                Nome
+                <input type="text" name="Nome" placeholder="Digite seu nome" required/>
+            </label>
+
+            <label>
+                E-mail
+                <input type="email" name="email" placeholder="Digite seu E-mail" required/>
+            </label>
+
+            <label>
+                Fale conosco
+                <textarea name="info" placeholder="Qual sua dúvida"></textarea>
+            </label>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+
+    <h2 id="titulo-meio">Como atuamos</h2>
+
+    <div class="caixa-central">    
+        <div class="card">
+            <h3 class="titulo-card">Conhecimento</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Inclusão Social</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Parcerias</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="caixa-inferior">
+        <h2 id="titulo-inferior">Sobre nós</h2>
+        <p class="paragrafo-inferior">Somos uma empresa sem fins lucrativos, que tem por objetivo a transformação dos cidadãos e a inclusão social por meio da tecnologia. Temos em nosso DNA que apenas por meio da educação é possível mudar a realidade das pessoas e do ambiente a sua volta, sendo que para isso necessitamos estreitar laços entre o mercado de trabalho, a sociedade e o conhecimento. Para isso, a Tech Me favorece esses elos de ligação entre a carência de conhecimento, encurtando a distância entre a sociedade e o mercado de trabalho.
+        </p>
+
+    </div>
+</body>
+<script>
+
+let formulario = document.getElementById("formulario-contato")
+
+console.log(formulario)
+
+function chameOabacate(){
+    formulario.className = "mostrar-formulario"
+}
+
+</script>
+
+</html>
